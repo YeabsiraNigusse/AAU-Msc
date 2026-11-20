@@ -1,0 +1,31 @@
+{
+  "prediction_matches_notebook": true,
+  "request_metrics": [
+    {
+      "path": "/health",
+      "status": 200,
+      "latency_ms": 0.53,
+      "outside_training_range": []
+    },
+    {
+      "path": "/predict",
+      "status": 200,
+      "latency_ms": 13.81,
+      "outside_training_range": []
+    },
+    {
+      "path": "/predict",
+      "status": 422,
+      "latency_ms": 0.4,
+      "outside_training_range": []
+    },
+    {
+      "path": "/predict",
+      "status": 200,
+      "latency_ms": 5.6,
+      "outside_training_range": [
+        "overall_height"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "model": "Random Forest",
+  "parameters": {
+    "model__max_depth": 8,
+    "model__min_samples_leaf": 1
+  },
+  "rows": {
+    "Training": 512,
+    "Validation": 128,
+    "Test": 128
+  },
+  "test_geometries": [
+    0.86,
+    0.9
+  ],
+  "test_metrics": {
+    "heating_load": {
+      "MSE": 15.728195084519786,
+      "RMSE": 3.9658788539893384,
+      "R\u00b2": -0.0008050593453197141
+    },
+    "cooling_load": {
+      "MSE": 21.324639436085942,
+      "RMSE": 4.617860915628138,
+      "R\u00b2": -0.5323214518539336
+    }
+  },
+  "baseline_metrics": {
+    "heating_load": {
+      "MSE": 102.9568056065332,
+      "RMSE": 10.146763306913845,
+      "R\u00b2": -5.551272500839342
+    },
+    "cooling_load": {
+      "MSE": 101.04711403808592,
+      "RMSE": 10.052219358832453,
+      "R\u00b2": -6.260927480277693
+    }
+  },
+  "rmse_reduction_pct": {
+    "heating_load": 60.91483821952316,
+    "cooling_load": 54.061279894667024
+  },
+  "success": true,
+  "sample": {
+    "relative_compactness": 0.82,
+    "surface_area": 612.5,
+    "wall_area": 318.5,
+    "roof_area": 147.0,
+    "overall_height": 7.0,
+    "glazing_area": 0.0,
+    "orientation": 2,
+    "glazing_area_distribution": 0
+  },
+  "sample_prediction": {
+    "heating_load": 16.992933333333344,
+    "cooling_load": 23.197933333333314
+  }
+}
