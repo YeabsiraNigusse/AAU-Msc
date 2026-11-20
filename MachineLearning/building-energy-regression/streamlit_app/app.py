@@ -9,7 +9,9 @@ import streamlit as st
 from pydantic import ValidationError
 
 APP_DIR = Path(__file__).resolve().parent
-sys.path.insert(0, str(APP_DIR.parent))
+project_dir = str(APP_DIR.parent)
+if project_dir not in sys.path:
+    sys.path.insert(0, project_dir)
 
 from src.design import BuildingDesign
 from src.features import FEATURES
